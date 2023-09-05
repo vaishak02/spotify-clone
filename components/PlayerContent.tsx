@@ -6,6 +6,8 @@ import { BsPauseFill, BsPlayFill } from "react-icons/bs";
 import { HiSpeakerWave, HiSpeakerXMark } from "react-icons/hi2";
 import { AiFillStepBackward, AiFillStepForward } from "react-icons/ai";
 
+
+
 import { Song } from "@/types";
 import usePlayer from "@/hooks/usePlayer";
 
@@ -59,7 +61,6 @@ const PlayerContent: React.FC<PlayerContentProps> = ({
 
     player.setId(previousSong);
   }
-
   const [play, { pause, sound }] = useSound(
     songUrl,
     { 
